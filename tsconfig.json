@@ -1,0 +1,27 @@
+{
+  "exclude": ["node_modules"],
+  "include": ["packages", "shared", "scripts", "standalone", "*.config.ts", "realworld"],
+  "compilerOptions": {
+    "module": "ESNext",
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "esnext",
+    "moduleResolution": "node",
+    "noImplicitReturns": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "stripInternal": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "suppressImplicitAnyIndexErrors": true
+  }
+}
