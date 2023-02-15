@@ -3,12 +3,13 @@ import dts from "vite-plugin-dts";
 import styleInject from "vite-plugin-style-inject";
 import { mergeConfig, defineConfig } from "vite";
 import viteConfigBase from "../../vite.base.config";
+import legacy from "@vitejs/plugin-legacy";
 import pkg from "./package.json";
 
 export default mergeConfig(
   viteConfigBase,
   defineConfig({
-    plugins: [styleInject(), dts()],
+    plugins: [legacy(), styleInject(), dts()],
     build: {
       outDir: "dist",
       cssCodeSplit: true,

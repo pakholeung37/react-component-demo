@@ -8,6 +8,7 @@ function App() {
 
   useEffect(() => {
     import(
+      // @ts-ignore
       "https://cdn.jsdelivr.net/npm/react-component-demo-heading@0.6.0/dist/index.mjs"
       // "/../heading/dist/index.mjs",
       // "http://127.0.0.1:5500/packages/heading/dist/index.mjs"
@@ -25,10 +26,6 @@ function App() {
       <div>
         from cdn
         {ComponentCdn ? <ComponentCdn /> : null}
-      </div>
-      <div>
-        asssets: .img
-        <img src="/assets/img.png" alt="img" />
       </div>
     </>
   );
